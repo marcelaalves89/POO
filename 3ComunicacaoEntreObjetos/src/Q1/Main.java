@@ -1,17 +1,28 @@
 package Q1;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+    public static void main (String args[]){
+        Circulo circ = new Circulo (5,3,10);
+        System.out.println("Identidade: " + circ);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+
+        Grafico g1 = new Grafico(true, '#');
+//        g1.plota(1);
+//        g1.plota(2);
+//        g1.plota(4);
+//        g1.plota(8);
+
+
+        Grafico g2 = new Grafico(false, '*');
+//        g2.plota(4);
+//        g2.plota(5);
+//        g2.plota(10);
+
+
+        Potencia p = new Potencia(1,7);
+        p.conecta(g1);
+        p.apresenta();
+        p.conecta(g2);
+        p.apresenta();
     }
 }
