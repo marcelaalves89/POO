@@ -6,7 +6,7 @@ public class Main {
         Conta conta1 = new Conta(101, 1500.0, cliente);
 
         conta1.saca(1000);
-        System.out.println("Nome do Cliente: "+cliente.nome +" Saldo: "+conta1.getSaldo());
+        System.out.println("Nome do Cliente: "+ cliente.getNome() +" Saldo: "+conta1.getSaldo());
         cliente.setNome("Juliana");
         System.out.println(cliente.getNome());
         cliente.setNome("Jamil");

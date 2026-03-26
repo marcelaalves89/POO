@@ -1,7 +1,6 @@
 package atv01.Aluno;
 
 public class Main {
-
     public static void main(String[] args) {
         Aluno p1 = new Aluno();
 
